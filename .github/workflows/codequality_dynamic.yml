@@ -1,0 +1,24 @@
+name: CodeQuality Dynamic Code Analysis Valgrind
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  test:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: apt install dependency
+      run: |
+        sudo apt-get -y install valgrind
+        sudo apt-get -y install libcunit1 libcunit1-doc libcunit1-dev 
+    - name: make test
+      run: make -C 3_Implementation/ all
+    - name: Create text file
+      run: echo "1 1 a -1" > input.txt
+    - name: Valgrid
+      run: valgrind ./3_Implementation/driver.out < input.txt
