@@ -3,6 +3,19 @@
 int main(){
     int option,check;
     char choice;
+    int choice1=0;
+    printf("1 or 2 deg \n");
+    scanf("%d",&choice);
+    if(choice1==1)
+    {accept_func();
+    trig_input();
+    calculate(2.5);
+    }
+    else
+    {
+        accept_functwo();
+        calculatetwo(1.5,2.5);
+    }
     while(1){
         printf("\n\n___________________________________________________\n");
         printf("\nEnter \"-1\" to quit program or Enter \"1\" to Continue\n");
