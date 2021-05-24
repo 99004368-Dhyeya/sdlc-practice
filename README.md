@@ -3,7 +3,7 @@ A group project in C for LTTS Genesis Training.
 
 Badge Name | Status |
 -----------|---------|
-Build |---To be Added---|
+Build |[![CI](https://github.com/99004368-Dhyeya/sdlc-practice/actions/workflows/main.yml/badge.svg)](https://github.com/99004368-Dhyeya/sdlc-practice/actions/workflows/main.yml)|
 Static Analysis Cppcheck |---To be Added---|
 Codeacy Code Quality |---To be Added---|
 Valgrind Dynamic Analysis |---To be Added---|
