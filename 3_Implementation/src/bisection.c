@@ -1,25 +1,50 @@
-#include "anm.h"
+/**
+ * @file Bisection.c
+ * @author Dhyeya Patel (dhyeya.patel@ltts.com)
+ * @brief 
+ * @version 0.1
+ * @date 2021-05-24
+ * 
+ * @copyright Copyright (c) 2021
+ * 
+ */
 
-float bisection(funcptr1 func){
-    int itr=0, maxitr=20;
-    float x,a,b,allowed_error;
-    allowed_error=0.0005;
-    a=3;
-    b=2;
-    x = (a+b)/2;
-    itr++;
-    do{
-        float x1;
-        if(func(a)*func(x)<0)
-            b=x;
-        else
-            a=x;
-        x1 = (a+b)/2; itr++;
-        if(fabs(x1-x)<allowed_error)
-            return x1;
-        x=x1;
-    } while(itr<maxitr);
+#include "root.h"
+#include "input.h"
+#include <limits.h>
 
-    return FAILED_TO_CONVERGE;
+/**
+ * @brief Bisection Iteration Function
+ * 
+ * @param upp_lim 
+ * @param low_lim 
+ * @return double 
+ */
+double Bisection(float upp_lim,float low_lim)
+{   
+    float x1=0, roots=0,b=0;
+    int itr, max_itr=20 ;           //Maximum Iterations = 20
+    for(itr=0;itr<=max_itr;itr++)
+   {
+       x1 = (upp_lim + low_lim)/2;
+       roots = calculatethree(x1);
 
+       {    
+           if(roots>0)
+            {
+                upp_lim = x1;
+            }
+            else
+            {
+                low_lim = x1;
+            }
+       }
+
+       if(roots-calculatethree((upp_lim+low_lim)/2)<=0.01)
+       b = ((upp_lim+low_lim)/2);
+
+       else 
+       continue;
+
+   } return b;
 }

@@ -2,25 +2,50 @@
 
 ## Introduction
 
-*   During my engineering course, there was a subject, Applied Numerical Methods (ANM), which demonstrated the numerical methods that can be applied to solve problems like finding the roots of a non-linear function, finding the value of integration or differentiation at a point for a function.
-*   These algorithms are tedious to solve, so I always thought it would be useful to have a tool that could solve such problems.
-*   This is the motivation for the Miniproject in which I will try to implement the different numerical methods algorithms to achieve the above mentioned tasks.
+*   Applied Numerical Methods (ANM) is an important subject that is a part of the undegraduate engineering syllabus. It contains many techniques to find numerical solutions for problems that can not be solved otherwise. The techniques demonstrated in numerical methods can be applied to solve problems like finding the roots of a non-linear function, finding the value of an integral or differential at a point, solving a system of linear equations and finding the solution of an ordinary or partial differential equation that can't be solved using classical techniques.
+*   These algorithms are tedious to solve by hand as they involve repetitive calculations that generate large numbers or unweildy decimals. However, a modern day computer is extremely suited to performing such calculations and hence the idea is to develop a tool that can solve such problems.
+*   This is the motivation behind this project. Here, we will implement different numerical methods that find the numerical solutions of ODEs, PDEs, integrals, differentials and other mathematical problems.
+*  We will also plot the solution obtained and allow the user to input complex functions.
 
- ## Research
+## Research
 
- ### Need and Importance of Numerical Methods
+### Need and Importance of Numerical Methods
 
-*   Numerical methods are already being used in computations performed by computers as the algorithms are iterative or are closely related to how many programming languages define the datatypes for performing these algorithms.
-*   Hence numerical methods have become important and have their own precence in the modern world due to the rise in computational capabilities.
+*   Numerical methods are being used in computations performed by computers as the algorithms are iterative and many programming languages define the datatypes for performing these algorithms.
+*   Hence numerical methods have become important and have their own importance in the modern world due to the rise in computational capabilities.
 *   They are able to produce useful results, this is because problems which cannot be solved can be cleverly approximated using numerical methods.
-*   This is the reason why numerical methods are being using in applied mathematical problems, as the direct solution for such problems might not be possible or is time consuming. Yet we can get a result close to the real solution with a margin of error which is acceptable.
-*   Numerical approach enables solution of complex problem with a great number of smaller but simpler operations, which make it a perfect match to implement with computers.
+*   This is the reason why numerical methods are being used to solve real-world mathematical problems, as the direct solution for such problems might not be possible or is time consuming. Yet we can get a result close to the real solution with a margin of error which is acceptable.
+*   The numerical approach enables solution of complex problem with a great number of smaller but simpler operations, which make it ideal to implement using computers.
 
 ### Implementation with Programming Language C
 
 *   C defines datatypes like double which have high precision and can be used to implement the algorithms with high accuracy. 
 *   The loops and precision can be used to iterate the algorithms in an efficient manner. 
-  
+
+## Identifying Features
+
+* In this project we have implemented numerical methods that solve integrals, perform differentiation, solve ODEs, solve PDEs.
+* We have also plotted the obtained solution in many cases graphically.
+* In our project the user can give complex input functions to be solved.
+
+## Ageing
+
+### Time
+* Numerical methods have been used by human beings for calculations from time immemorial
+* There is evidence that Egyptions used a numerical methods to find the roots of a simple equation
+* Progressively, many great Greek mathematicians such as Archimedes also developed numerical methods to calculate the areas and volumes of a geometric figure.
+* It was also the forerunner for the field of calculus
+* Consequently many of the great names in the field of mathematics further developed numerical methods to solve more advanced problems
+* These include Newton, Gauss, Leibniz and Euler. Today many of the numerical methods taught bear their name.
+* As mentioned earlier, with the advent of computers, it became easier to obtain numerical solutions as tedious calculations could be performed by computers easily.
+
+### Feature evolution
+
+* With the advent of computers several tools have been created to perform numerical analysis
+* The Netlib library contains the code for many numerical problems that are written in C or FORTRAN
+* The GNU-Scientific library is another open source alternative.
+* Today, several tools like MATLAB, NumPy, SciPy, Octave, R etc. make it easy to perform numerical analysis although they don't have predfined libraries that already contain routines that implement numerical methods.
+* In this project we seek to create routines that directly implement numerical methods.
 
 ## Cost and Features
 
@@ -35,13 +60,14 @@
 *   Integration and differentiation can be made to be analytical with intensive designing.
 
 ## Defining The System
-![Basic System Overview](https://github.com/Gobikumaar-Sivagnanam/Miniproject_C/blob/main/1_Requirements/System%20Design.png)
-*   Creating individual functions to implement the different algorithms for each of the tasks e.g., Newton Raphson Method, Bisection Method, Regula Falsi Method.
+
+![Basic System Overview](https://github.com/GENESIS2021Q1/sdlc-team-4/blob/main/1_Requirements/Images/SystemDesign.png)
+*   Creating individual functions to implement the different algorithms for each of the tasks e.g., Newton Raphson Method, Bisection Method, Regula Falsi Method, Gauss-Seidel, Euler, Runge-Kutta etc.
 *   Creating a function which calls the methods implemented based on an option.
-*   Creating a main driver program to select the functionality, i.e. Finding root of a Non-linear Function, Numerical Differentiation or Numercial Integration.
+*   Creating a main driver program to select the functionality, i.e. Finding root of a Non-linear Function, Numerical Differentiation, Numercial Integration, solving a system of linear equations, solving ODEs and PDEs.
   
 ## SWOT Analysis
-![SWOT Analysis](https://github.com/Gobikumaar-Sivagnanam/Miniproject_C/blob/main/1_Requirements/SWOT%20Analysis.png)
+![SWOT Analysis](https://github.com/GENESIS2021Q1/sdlc-team-4/blob/main/1_Requirements/Images/SWOT%20Analysis.png)
 
 ## 4W&#39;s and 1&#39;H
 
@@ -53,33 +79,56 @@
 *   Using C programming to implement the numerical algorithms.
 
 ## When
-*   Thought came to my mind when I was studying Applied Numerical Methods subject during my enginnering.
+*   The thought came mind after studying Applied Numerical Methods in our engineering curricula.
 
 ## Where
 *   Open source so anyone can use it, and help in improving it.
 
 ## How
-*   Thinking about how the implementation of mumerical methods are similar to how a computer operates.
+*   Thinking about how the computations involved in finding the numerical solution can be easily implemented programmatically.
 
 ## Detailed Requirements
 
 ## High Level Requirements
-*   Function to call the functionalities of finding the root, numerical integration and numerical differentiation.
-*   Functions to implement the individual Algorithms.
+
+| ID   | Description                                                                                   | Category  | Status      |
+|------|-----------------------------------------------------------------------------------------------|-----------|-------------|
+| HR01 | Menu of selection for finding roots, numerical differentiation, numerical integration and finding the solution of a first order differential equation | Technical | Implemented |
+| HR02 | Creating Functions for implementing the individual algorithms                                 | Technical | Implemented |
+| HR03 | Accepting function to be evaluated for roots, integration or differentiation from user        | Technical | Ongoing     |
+| HR04 | Functions to plot the function and associated results | Technical | Ongoing |
+| HR05 | Functions to solve the Partial Differential Equations  | Technical | Ongoing |
+| HR06 | Functions to solve the roots pf the equations | Technical | Ongoing |
+
 
 ## Low Level Requirements
 
-| Function Name | Function Input | Function Description | Function Output |
-|---------------|----------------------|-----------------|---|
-| newton_raphson.c | Two function pointers, one to a function and second to it's derivative | Implements the Newton Raphson algorithm which is iterative to converge on a root | Root of the function close to initial guess | 
-| bisection.c | Function pointer to a given function | Assuming a range where the function is continous to converge on a root in this range | Root of the function in a given range |
-| regula_falsi.c | Function Pointer to a given function | Takes two initial guesses and uses interpolation to reach a root | Root of the function close to the intial two guesses | 
-| root_function.c | Option to select between three functions | Function to call bisection.c, newton_raphson.c or regula_falsi.c based on an option | Calling the respective function |
-| simpson_1_3.c | Function pointer to a given function | Takes the limit for integration and implements the Simpson's 1/3rd Rule for numerical integration | Result of the integration of function within the limits |
-| trapezoidal.c | Function pointer to a given function | Takes the limit of the function and appxoimates the function area as summation of trapezoids | Result of the integration of the function within the limits |
-| simpson_3_8.c | Function pointer to a given function | Takes the limit for integration of the function and uses the Simpson's 3/8th Rule for numerical integration | Result of the integration of the function within the limits |
-| numerical_integration.c | Option to select between the three implementations | Function to call simpson_1_3.c, trapezoidal.c or simpson_3_8.c based on the option | Calling the respective function |
-| forward_difference.c | Doesn't take any arguement | Using a dataset with value and function at the respective value to find the numerical differentiation at a point using Newton's Forward difference formula | Result of differentiation at a point |
-| backward_difference.c | Doesn't take any arguement | Using a dataset with value and function at the respective value to find the numerical differentiation at a point using Newton's Backward difference formula | Result of differentiation at a point |
-| two_point_difference.c | Function pointer to a given function | Takes the function and calculates the function value at two points then uses the two point difference formula | Result of differentiation of the function at a point |
-| numerical_differentiation.c | Option to select between the three implementations | Function to call forward_difference.c, backward_difference.c or two_point_difference.c based on the option | Calling the respective function |
+| ID   | Description                                                    | HLR ID | Status      |
+|------|----------------------------------------------------------------|--------|-------------|
+| LR01 | Function for selecting method for finding roots of an equation | HR06   | Ongoing |
+| LR02 | Function for selecting method for Numerical Integration        | HR01   | Implemented |
+| LR03 | Function for selecting method for Numerical Differentiation    | HR01   | Implemented |
+| LR04 | Function for selecting method for solving first order ODE      | HR01   | Ongoing     |
+| LR05 | Implementing Newton Raphson method to find roots               | HR02   | Implemented |
+| LR06 | Implementing Bisection method to find roots                    | HR02   | Implemented |
+| LR07 | Implementing Regula Falsi method to find roots                 | HR02   | Implemented |
+| LR08 | Implementing Simpson's 1/3 method for integration              | HR02   | Implemented |
+| LR09 | Implementing Trapezoidal method for integration                | HR02   | Implemented |
+| LR10 | Implementing Simpson's 3/8 method for integration              | HR02   | Implemented |
+| LR11 | Implementing Forward difference method for differentiation     | HR02   | Implemented |
+| LR12 | Implementing Backward difference method for differentiation    | HR02   | Implemented |
+| LR13 | Implementing Two point difference method for differentiation   | HR02   | Implemented |
+| LR14 | Implementing the Euler method for finding the solution of a first order ODE | HR02 | Ongoing |
+| LR15 | Implementing the Euler-Modified method for finding the solution of a first order ODE | HR02 | Ongoing |
+| LR16 | Implementing the Runge-Kutta method for finding the solution of a first order ODE | HR02 | Ongoing |
+| LR16 | Accepting coefficients for numerator and denominator functions | HR03   | Ongoing     |
+| LR17 | Appending logarithmic and trigonometric functions              | HR03   | Ongoing     |
+| LR18 | Forming the function with all coefficients and special functions | HR03  | Ongoing    |
+| LR19 | Finding values of function for given variable values           | HR03   | Ongoing     |
+| LR20 | Plotting the function input from user | HR04 | Ongoing |
+| LR21 | Plotting the function input from user with it's result | HR04 | Ongoing |
+| LR22 | Finding the initial values from the function  | HR05 | Ongoing |
+| LR23 | Take the Conductivity and step size for solving Heat Equation | HR05 | Ongoing |
+| LR24 | Take the Boundary conditions and step size to solve the laplce equation | HR05 | Ongoing |
+| LR25 | Implementing a function for finding the interval between which roots are present | HR06 | Ongoing |
+| LR26 | Plotting of roots | HR04 &  HR06 | Ongoing |

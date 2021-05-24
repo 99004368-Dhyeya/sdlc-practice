@@ -2,9 +2,29 @@ PROJ_NAME = driver
 
 TEST_PROJ_NAME = test_$(PROJ_NAME)
 
-SRC = src/newton_raphson.c src/bisection.c src/regula_falsi.c src/root_function.c \
-src/simpson_1_3.c src/trapezoidal.c src/simpson_3_8.c src/numerical_integration.c \
-src/forward_difference.c src/backward_difference.c src/two_point_difference.c src/numerical_differentiation.c
+SRC = src/root.c\
+src/trigo_calc.c\
+src/trigo.c\
+src/Bisection.c\
+src/value_accept.c\
+src/calculation.c\
+src/Newton_Raphson.c\
+src/choice.c\
+src/function_plot.c\
+src/pbPlots.c\
+src/plot_pointer_function.c\
+src/points_function_plot.c\
+src/supportLib.c\
+src/testWritePNG.c\
+src/calculateTime.c\
+src/startTime.c\
+src/endTime.c\
+src/PDE_heat.c\
+src/Gauss_siedel.c\
+src/laplace.c\
+src/odenm.c\
+src/user_Choice.c
+
 
 TEST_SRC = test/test.c \
 unity/unity.c
@@ -25,7 +45,7 @@ else
    endif
 endif
 
-.PHONY : all run clean
+.PHONY : all test run clean
 
 all: $(SRC)
 	gcc main.c $(SRC) $(INC) -lm -o $(call FixPath,$(PROJ_NAME).$(EXEC))
@@ -49,6 +69,6 @@ memcheck:
 	valgrind ./$(PROJ_NAME).$(EXEC)
 
 clean:
-	$(RM) *.$(EXEC) *.gcov *.gcda *.gcno 
+	$(RM) *.$(EXEC) *.gcov *.gcda *.gcno *.png
 
 analyze: all run test coverage staticcheck memcheck clean

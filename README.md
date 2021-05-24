@@ -1,15 +1,15 @@
-# Miniproject_C (SDLC Activity Based Learning)
-A miniproject in C for LTTS Training
+# Applied Numerical Methods (SDLC Activity Based Learning)
+A group project in C for LTTS Genesis Training.
 
 Badge Name | Status |
 -----------|---------|
-Build | [![Linux C/C++ Build CI](https://github.com/Gobikumaar-Sivagnanam/Miniproject_C/actions/workflows/Linux_c-cpp.yml/badge.svg)](https://github.com/Gobikumaar-Sivagnanam/Miniproject_C/actions/workflows/Linux_c-cpp.yml) |
-Static Analysis Cppcheck | [![Code Quality - Static Analysis - Cppcheck](https://github.com/Gobikumaar-Sivagnanam/Miniproject_C/actions/workflows/cpp-check.yml/badge.svg)](https://github.com/Gobikumaar-Sivagnanam/Miniproject_C/actions/workflows/cpp-check.yml) |
-Codeacy Code Quality | [![Codacy Badge](https://app.codacy.com/project/badge/Grade/c4d73f97667d4050bc88b341571bfc1d)](https://www.codacy.com/gh/Gobikumaar-Sivagnanam/Miniproject_C/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=Gobikumaar-Sivagnanam/Miniproject_C&amp;utm_campaign=Badge_Grade) |
-Valgrind Dynamic Analysis | [![CodeQuality Dynamic Code Analysis Valgrind](https://github.com/Gobikumaar-Sivagnanam/Miniproject_C/actions/workflows/codequality_dynamic.yml/badge.svg)](https://github.com/Gobikumaar-Sivagnanam/Miniproject_C/actions/workflows/codequality_dynamic.yml) |
-Code Coverage | [![CI-Coverage](https://github.com/Gobikumaar-Sivagnanam/Miniproject_C/actions/workflows/coverage.yml/badge.svg)](https://github.com/Gobikumaar-Sivagnanam/Miniproject_C/actions/workflows/coverage.yml) |
-Unity Testing | [![Unit Testing - Unity](https://github.com/Gobikumaar-Sivagnanam/Miniproject_C/actions/workflows/unity_test.yml/badge.svg)](https://github.com/Gobikumaar-Sivagnanam/Miniproject_C/actions/workflows/unity_test.yml) |
-Git Inspector(using github.io option) | [![Contribution Check - Git Inspector](https://github.com/Gobikumaar-Sivagnanam/Miniproject_C/actions/workflows/gitinspector.yml/badge.svg)](https://github.com/Gobikumaar-Sivagnanam/Miniproject_C/actions/workflows/gitinspector.yml) |
+Build |---To be Added---|
+Static Analysis Cppcheck |---To be Added---|
+Codeacy Code Quality |---To be Added---|
+Valgrind Dynamic Analysis |---To be Added---|
+Code Coverage |---To be Added---|
+Unity Testing |---To be Added---|
+Git Inspector(using github.io option) |---To be Added---|
 
 ## Folder Structure
 Folder               | Description
@@ -22,16 +22,14 @@ Folder               | Description
 `6_ImagesAndVideos`  | Files containing working video and images
 `7_Other`            | Other supporting documents
 
-## References 
-*   C Programming and Numerical Analysis
-*   Introduction To Numerical Analysis With C Programs, Attila Mate
-*   [Code Reference Link 1](https://www.codesansar.com)
-*   [Code Reference Link 2](https://www.codewithc.com)
-
 ## Contributors List and Summary
-| SF_ID | Name | Features | Issues Raised | Issues Solved | No. of Test Cases | No. of Test Cases Passing |
+| PS_No. | Name | Features | Issues Raised | Issues Solved | No. of Test Cases | No. of Test Cases Passing |
 |-----|-----|-----|-----|-----|-----|-----|
-| 255919 | Gobikumaar Sivagnanam | All the function implementations | 1 | 1 | 9 | 9 
+| 99004367 | Jayasri Vaidyaraman | Numerical methods for solving first order differential equations (Euler, Euler-Modified, Runge-Kutta) | 1 | - | - | - |
+| 99004368 | Dhyeya Dharmendra Patel | Solving Transcedental & Algebraic Equations | - | - | - | - |
+| 99004369 | Ayushman Ranu | Input of functions from user | - | - | - | - |
+| 99004370 | Venkata Sri Sai Chandavolu | Solving Partial Differential equations | - | - | - | - |
+| 99004371 | Gobikumaar Sivagnanam | Plotting and visualizing the functions, update | - | - | - | - |
 
 ## Challenges Faced and How it was overcome
 | Challenge Faced | Method to overcome |
@@ -40,3 +38,12 @@ Folder               | Description
 | Writing test cases with manual functions | Kept the function constant and predefined | 
 | Taking manual functions | Proved to be very complex in terms of reading the user input, didn't implement |
 | Functions being redifined while using for testing | Declared the function in header file and Defined in respective files |
+| Using the extern keyword to extend the visibility of a pointer for the entire program | Ongoing |
+
+## References 
+*   C Programming and Numerical Analysis
+*   Introduction To Numerical Analysis With C Programs, Attila Mate
+*   [Code Reference Link 1](https://www.codesansar.com)
+*   [Code Reference Link 2](https://www.codewithc.com)
+*   [History of Numerical Methods](https://www.britannica.com/science/numerical-analysis/Historical-background)
+*   [Numerical Methods](https://en.wikipedia.org/wiki/Numerical_analysis)
