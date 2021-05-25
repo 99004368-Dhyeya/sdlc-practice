@@ -1,3 +1,15 @@
+/**
+ * @file odenm.c
+ * @author Jayasri Vaidyaraman (jayasri.vaidyaraman@ltts.com)
+ * @brief File that contains the functions definitions for Euler, Modified Euler and Runge Kutta algorithms
+ * @version 0.1
+ * @date 2021-05-23
+ * 
+ * @copyright Copyright (c) 2021
+ * 
+ */
+
+
 #include<stdio.h>
 #include<math.h>
 #include<stdlib.h>
@@ -48,7 +60,7 @@ void userInput(int choice)
             printf("Enter the number of steps the interval between the x0 and the x at which y(x) should be calculated should have\n");
             scanf("%d",&details1.numOfPoints);
             details1.stepsize = (details1.xgiv-xo)/(details1.numOfPoints); 
-            printf("The stepsize is %d\n",details1.stepsize);
+            printf("The stepsize is %lf\n",details1.stepsize);
             break;
         case 2:
             details2.xic = xo;
@@ -95,12 +107,28 @@ double EulerFormula(double xn, double yn, double stepsize)
     return ynew;
 }
 
+double EulerFormulaTest(double xn, double yn, double stepsize)
+{
+    double ynew;
+    ynew = yn + stepsize*dummycalculatetwo(xn,yn);
+    return ynew;
+}
+
 double EulerModifiedFormula(double xn, double yn, double stepsize)
 {
     double ytemp, ynew, xn1;
     xn1 = xn + stepsize;
     ytemp = yn + stepsize*calculatetwo(xn,yn);
     ynew = yn + (stepsize/2.0)*(calculatetwo(xn,yn)+calculatetwo(xn1,ytemp));
+    return ynew;
+}
+
+double EulerModifiedFormulaTest(double xn, double yn, double stepsize)
+{
+    double ytemp, ynew, xn1;
+    xn1 = xn + stepsize;
+    ytemp = yn + stepsize*dummycalculatetwo(xn,yn);
+    ynew = yn + (stepsize/2.0)*(dummycalculatetwo(xn,yn)+dummycalculatetwo(xn1,ytemp));
     return ynew;
 }
 
@@ -116,6 +144,23 @@ double RungeKuttaFormula(double xn, double yn, double stepsize)
     intermediateY = xn + stepsize;
     intermediateY = yn + k3;
     k4 = stepsize*calculatetwo(intermediateX,intermediateY);
+    k = (k1 + k2 + k3 + k4)/6.0;
+    ynew = yn + k;
+    return ynew;
+}
+
+double RungeKuttaFormulaTest(double xn, double yn, double stepsize)
+{
+    double k1, k2, k3, k4, k, ynew, intermediateX, intermediateY;
+    k1 = stepsize*dummycalculatetwo(xn,yn);
+    intermediateX = xn + (stepsize/2.0);
+    intermediateY = yn + (k1/2.0);
+    k2 = stepsize*dummycalculatetwo(intermediateX,intermediateY);
+    intermediateY = yn + (k2/2.0);
+    k3 = stepsize*dummycalculatetwo(intermediateX,intermediateY);
+    intermediateY = xn + stepsize;
+    intermediateY = yn + k3;
+    k4 = stepsize*dummycalculatetwo(intermediateX,intermediateY);
     k = (k1 + k2 + k3 + k4)/6.0;
     ynew = yn + k;
     return ynew;
@@ -200,4 +245,10 @@ void print(int numOfPoints)
     printf("Number of points to be printed\n");
     for(i=0;i<=numToBePrinted;i++)
     printf("x%d = %lf    y%d = %lf\n",i,*(xpoints + i),i,*(ypoints + i));
+}
+
+double dummycalculatetwo(double x,double y)
+{
+    y=3*pow(x,2)*y;
+    return y;
 }

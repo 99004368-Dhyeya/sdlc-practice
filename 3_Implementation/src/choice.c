@@ -27,7 +27,6 @@ int choice=0;
     printf("Enter choice for types of equations:\n");
     printf("Enter 1 for Algebraic Equations:\n");
     printf("Enter 2 for Transcedental Equations:\n");
-    printf("Enter 3 for Newton Raphson:\n");
     scanf("%d",&choice);
     switch(choice)
     {
@@ -39,8 +38,6 @@ int choice=0;
         Transcedental();
         break;
 
-        case 3:
-        Newton_raphson();
     }
     functionPointer function = calculatethree;
      function_plot(function);                       //Plotting Function

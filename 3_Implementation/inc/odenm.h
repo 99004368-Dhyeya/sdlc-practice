@@ -100,4 +100,9 @@ void print(int numOfPoints);
  */
 void odeSolver(int choice, char method);
 
+double EulerFormulaTest(double xn, double yn, double stepsize);
+double EulerModifiedFormulaTest(double xn, double yn, double stepsize);
+double RungeKuttaFormulaTest(double xn, double yn, double stepsize);
+double dummycalculatetwo(double,double);
+
 #endif //__ODENM_H__

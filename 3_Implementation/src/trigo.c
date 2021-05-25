@@ -1,5 +1,15 @@
+/**
+ * @file trigo.c
+ * @author Ayushman (ayushman.ranu@ltts.com)
+ * @brief Accepts trigo function from user
+ * @version 0.1
+ * @date 2021-05-25
+ * 
+ * @copyright Copyright (c) 2021
+ * 
+ */
 #include "input.h"
-int nu=0,fun=0;
+int nu=0,funct=0;
 int ari=0;
 char str[20];
 void trig_input()
@@ -47,34 +57,34 @@ void trig_input()
     {
         //printf("Hey");
         if(str[0]=='s')
-        {fun=1;nu=1;}
+        {funct=1;nu=1;}
         else if(str[0]=='c')
-        {fun=2;nu=1;}
+        {funct=2;nu=1;}
         else if(str[0]=='t')
-        {fun=3;nu=1;}
+        {funct=3;nu=1;}
         else if(str[0]=='l')
-        {fun=4;nu=1;}
+        {funct=4;nu=1;}
     }
     else
     {
         nu=2;
         if(str[0]=='s')
-        fun=1;
+        funct=1;
         else if(str[0]=='c')
-        fun=2;
+        funct=2;
         else if(str[0]=='t')
-        fun=3;
+        funct=3;
         else if(str[0]=='l')
-        fun=4;
+        funct=4;
 
         if(str[7]=='s')
-        fun=fun*10+1;
+        funct=funct*10+1;
         else if(str[7]=='c')
-        fun=fun*10+2;
+        funct=funct*10+2;
         else if(str[7]=='t')
-        fun=fun*10+3;
+        funct=funct*10+3;
         else if(str[7]=='l')
-        fun=fun*10+4;
+        funct=funct*10+4;
     }
-    //printf("%d\n%d\n%d\n",nu,ari,fun);
+    //printf("%d\n%d\n%d\n",nu,ari,funct);
 }

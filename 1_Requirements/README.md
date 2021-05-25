@@ -61,7 +61,7 @@
 
 ## Defining The System
 
-![Basic System Overview](https://github.com/GENESIS2021Q1/sdlc-team-4/blob/main/1_Requirements/Images/SystemDesign.png)
+![Basic System Overview](https://github.com/GENESIS2021Q1/sdlc-team-4/blob/main/1_Requirements/Images/System_design_updated.png)
 *   Creating individual functions to implement the different algorithms for each of the tasks e.g., Newton Raphson Method, Bisection Method, Regula Falsi Method, Gauss-Seidel, Euler, Runge-Kutta etc.
 *   Creating a function which calls the methods implemented based on an option.
 *   Creating a main driver program to select the functionality, i.e. Finding root of a Non-linear Function, Numerical Differentiation, Numercial Integration, solving a system of linear equations, solving ODEs and PDEs.
@@ -95,20 +95,20 @@
 |------|-----------------------------------------------------------------------------------------------|-----------|-------------|
 | HR01 | Menu of selection for finding roots, numerical differentiation, numerical integration and finding the solution of a first order differential equation | Technical | Implemented |
 | HR02 | Creating Functions for implementing the individual algorithms                                 | Technical | Implemented |
-| HR03 | Accepting function to be evaluated for roots, integration or differentiation from user        | Technical | Ongoing     |
-| HR04 | Functions to plot the function and associated results | Technical | Ongoing |
-| HR05 | Functions to solve the Partial Differential Equations  | Technical | Ongoing |
-| HR06 | Functions to solve the roots pf the equations | Technical | Ongoing |
+| HR03 | Accepting function to be evaluated for roots, integration or differentiation from user        | Technical |Implemented     |
+| HR04 | Functions to plot the function and associated results | Technical |Implemented |
+| HR05 | Functions to solve the Partial Differential Equations  | Technical |Implemented |
+| HR06 | Functions to solve the roots pf the equations | Technical | Implemented |
 
 
 ## Low Level Requirements
 
 | ID   | Description                                                    | HLR ID | Status      |
 |------|----------------------------------------------------------------|--------|-------------|
-| LR01 | Function for selecting method for finding roots of an equation | HR06   | Ongoing |
+| LR01 | Function for selecting method for finding roots of an equation | HR06   | Implemented|
 | LR02 | Function for selecting method for Numerical Integration        | HR01   | Implemented |
 | LR03 | Function for selecting method for Numerical Differentiation    | HR01   | Implemented |
-| LR04 | Function for selecting method for solving first order ODE      | HR01   | Ongoing     |
+| LR04 | Function for selecting method for solving first order ODE      | HR01   | Implemented    |
 | LR05 | Implementing Newton Raphson method to find roots               | HR02   | Implemented |
 | LR06 | Implementing Bisection method to find roots                    | HR02   | Implemented |
 | LR07 | Implementing Regula Falsi method to find roots                 | HR02   | Implemented |
@@ -118,17 +118,17 @@
 | LR11 | Implementing Forward difference method for differentiation     | HR02   | Implemented |
 | LR12 | Implementing Backward difference method for differentiation    | HR02   | Implemented |
 | LR13 | Implementing Two point difference method for differentiation   | HR02   | Implemented |
-| LR14 | Implementing the Euler method for finding the solution of a first order ODE | HR02 | Ongoing |
-| LR15 | Implementing the Euler-Modified method for finding the solution of a first order ODE | HR02 | Ongoing |
-| LR16 | Implementing the Runge-Kutta method for finding the solution of a first order ODE | HR02 | Ongoing |
-| LR16 | Accepting coefficients for numerator and denominator functions | HR03   | Ongoing     |
-| LR17 | Appending logarithmic and trigonometric functions              | HR03   | Ongoing     |
-| LR18 | Forming the function with all coefficients and special functions | HR03  | Ongoing    |
-| LR19 | Finding values of function for given variable values           | HR03   | Ongoing     |
-| LR20 | Plotting the function input from user | HR04 | Ongoing |
-| LR21 | Plotting the function input from user with it's result | HR04 | Ongoing |
-| LR22 | Finding the initial values from the function  | HR05 | Ongoing |
-| LR23 | Take the Conductivity and step size for solving Heat Equation | HR05 | Ongoing |
-| LR24 | Take the Boundary conditions and step size to solve the laplce equation | HR05 | Ongoing |
-| LR25 | Implementing a function for finding the interval between which roots are present | HR06 | Ongoing |
-| LR26 | Plotting of roots | HR04 &  HR06 | Ongoing |
+| LR14 | Implementing the Euler method for finding the solution of a first order ODE | HR02 |Implemented |
+| LR15 | Implementing the Euler-Modified method for finding the solution of a first order ODE | HR02 | Implemented |
+| LR16 | Implementing the Runge-Kutta method for finding the solution of a first order ODE | HR02 | Implemented |
+| LR16 | Accepting coefficients for numerator and denominator functions | HR03   | Implemented     |
+| LR17 | Appending logarithmic and trigonometric functions              | HR03   | Implemented     |
+| LR18 | Forming the function with all coefficients and special functions | HR03  | Implemented   |
+| LR19 | Finding values of function for given variable values           | HR03   | Implemented    |
+| LR20 | Plotting the function input from user | HR04 | Implemented |
+| LR21 | Plotting the function input from user with it's result | HR04 | Implemented |
+| LR22 | Finding the initial values from the function  | HR05 | Implemented |
+| LR23 | Take the Conductivity and step size for solving Heat Equation | HR05 | Implemented |
+| LR24 | Take the Boundary conditions and step size to solve the laplce equation | HR05 | Implemented |
+| LR25 | Implementing a function for finding the interval between which roots are present | HR06 | Implemented |
+| LR26 | Plotting of roots | HR04 &  HR06 | Implemented|

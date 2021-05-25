@@ -118,3 +118,32 @@ double Transcedental()
     endTime();          //stops timer for calculation of algorithm time
 }
 
+/**
+ * @brief Unit Test Function for Algebraic Equations
+ * 
+ * @return double 
+ */
+double Algebraic_test()
+{   double r_o=0;
+    
+    upp_lim = interval_1();
+    low_lim = interval_2();
+   
+   r_o = Bisection(upp_lim,low_lim);
+
+}
+
+/**
+ * @brief Unit Test Function for Transcedental Equations
+ * 
+ * @return double 
+ */
+double Transcedental_test()
+{
+    double r_o=0;
+    float trig_val = 1;
+    upp_lim = interval_1();
+    low_lim = interval_2();
+   
+   r_o = Bisection(upp_lim,low_lim);
+}

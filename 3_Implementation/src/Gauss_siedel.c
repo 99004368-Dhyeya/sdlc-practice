@@ -1,3 +1,13 @@
+/**
+ * @file Gauss_siedel.c
+ * @author Venkata Sri Sai Chandavolu
+ * @brief Gauss Siedel algorithm file
+ * @version 0.1
+ * @date 2021-05-25
+ * 
+ * @copyright Copyright (c) 2021
+ * 
+ */
 #include "Siedel.h"
 float*  gauss_siedell(float *x1,float *y1,float *z1)
 {

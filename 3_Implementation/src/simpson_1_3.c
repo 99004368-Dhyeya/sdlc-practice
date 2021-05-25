@@ -1,9 +1,19 @@
+/**
+ * @file simpson_1_3.c
+ * @author Gobikumaar Sivagnanam
+ * @brief Simpson's 1/3 method implementation
+ * @version 0.1
+ * @date 2021-05-25
+ * 
+ * @copyright Copyright (c) 2021
+ * 
+ */
 #include "anm.h"
 
-float simpson_1_3(funcptr1 func){
+double simpson_1_3(funcptr1 func){
     int i,n;
-    float x0,xn,h,so = 0,se = 0,result;
-    float x[20],y[20];
+    double x0,xn,h,so = 0,se = 0,result;
+    double x[20],y[20];
     x0 = 2; xn = 4; h = 0.5; 
     n = (xn-x0)/h;
     n = (n%2==0) ? n : n+1;

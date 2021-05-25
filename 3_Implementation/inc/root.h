@@ -41,6 +41,13 @@ extern int num_co[];
 double Algebraic();
 
 /**
+ * @brief Algebraic Test Function
+ * 
+ * @return double 
+ */
+double Algebraic_test();
+
+/**
  * @brief Bisection method for solving transcedental equations
  * 
  * @return double 
@@ -48,18 +55,12 @@ double Algebraic();
 double Transcedental();
 
 /**
- * @brief Newton Raphson method Declaration
+ * @brief Transcedental Test Function
  * 
  * @return double 
  */
-double Newton_raphson();
+double Transcedental_test();
 
-/**
- * @brief Newton Raphson method Implementation
- * 
- * @return double 
- */
-double NR();
 
 /**
  * @brief Function for finding lowest positive limit
@@ -82,19 +83,6 @@ int interval_2();
  */
 double Bisection(float,float);
 
-/**
- * @brief Calculation of values function for differentiation
- * 
- * @return double 
- */
-double calculate1(double);
-
-/**
- * @brief Power Function for differentiation
- * 
- * @return double 
- */
-double power1(double, int);
 
 /**
  * @brief Selection of which method for Bi-Section and Newton-Raphson Method 

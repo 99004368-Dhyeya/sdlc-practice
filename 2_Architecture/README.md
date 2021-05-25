@@ -6,7 +6,7 @@
 ![High Level](https://github.com/GENESIS2021Q1/sdlc-team-4/blob/main/2_Architecture/Images/High_level.png)
 
 *   Usecase Diagram:
-<img src="/2_Architecture/High_Level_Use_Case.png">
+<img src="/2_Architecture/Images/High_Level_Use_Case.png">
 
 
 
@@ -37,7 +37,7 @@
 
 | Class Diagram                                       | Use Case Diagram                                    |
 |-----------------------------------------------------|-----------------------------------------------------|
-| <img src="/2_Architecture/PDE_class_diagram.png">  | <img src="/2_Architecture/PDE_use Case.png"> |
+| <img src="/2_Architecture/Images/PDE_class_diagram.png">  | <img src="/2_Architecture/Images/PDE_use Case.png"> |
 | Activity Diagram                                    | State Diagram                                               |
 | <img src="/2_Architecture/Images/PDE_activity.png">| <img src="/2_Architecture/Images/PDE_state_diagram.png">                                            |
 

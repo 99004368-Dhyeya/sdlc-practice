@@ -1,3 +1,13 @@
+/**
+ * @file calculation.c
+ * @author Ayushman (ayushman.ranu@ltts.com)
+ * @brief Calculation functions for returning value at a point
+ * @version 0.1
+ * @date 2021-05-25
+ * 
+ * @copyright Copyright (c) 2021
+ * 
+ */
 #include "input.h"
 
 double power(float x, int deg)

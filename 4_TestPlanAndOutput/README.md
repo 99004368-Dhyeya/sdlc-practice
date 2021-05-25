@@ -25,16 +25,16 @@
 | L_07 | To test the Newton's Forward Difference formula implementation to find the numerical differentiation of a function at a point | Dataset Array | 3.775502 | 3.775502 | Scenario/Technical |
 | L_08 | To test the Newton's Backward Difference formula implementation to find the numerical differentiation of a function at a point | Dataset Array | 2.811621 | 2.811621 | Scenario/Technical |
 | L_09 | To test the Two Point Difference formula implementation to find the numerical differentiation of a function at a point | Function Pointer to a given function | 4.297853 | 4.297853 | Scenario/Technical |
-| L_10 | To test function value calculated in case of a single variable function | Function Coefficients | TBD | TBD | Scenario/Technical |
-| L_11 | To test function value calculated in case of a Dual variable function | Function Coefficients | TBD | TBD | Scenario/Technical |
-| L_12 | To test the code that plots an equation | Function | TBD | TBD | Screnario |
-| L_13 | To test the code that plots an equation with the result | Function and it's results | TBD | TBD | Screnario |
-| L_14 | To test whether the Euler method is able to obtain y(x) for a given x where y(x), is the soltuion of the given first order ODE | Function and the initial conditions along with x at which y(x) is to be found | TBD | TBD | Scenario |
-| L_15 | To test whether the Euler method is able to plot y(x) where y(x) is the solution of a first order ODE | Function, initial conditions and step size | TBD | TBD | Scenario |
-| L_16 | To test whether the Euler-Modified method is able to obtain y(x) for a given x, where y(x) is the soltuion of the given first order ODE | Function and the initial conditions along with x at which y(x) is to be found | TBD | TBD | Scenario |
-| L_17 | To test whether the Euler-Modified method is able to plot y(x) where y(x) is the solution of a first order ODE | Function, initial conditions and step size | TBD | TBD | Scenario |
-| L_18 | To test whether the Runge-Kutta method is able to obtain y(x) for a given x, where y(x) is the soltuion of the given first order ODE | Function and the initial conditions along with x at which y(x) is to be found | TBD | TBD | Scenario |
-| L_19 | To test whether the Runge-Kutta is able to plot y(x) where y(x) is the solution of a first order ODE | Function, initial conditions and step size | TBD | TBD | Scenario |
-| L_20 | To test whether the Gauss Siedel method for solving system of linear equations | Function, initial conditions and coefficients of equations | TBD | TBD | Scenario/Technical |
-| L_21 | To test whether the second order PDE heat equation solving and resultant values | Boundary Conditions , step size  | TBD | TBD | Scenario/Technical |
-| L_22 | To test whether the working of function for  initial conditions | Functional coefficients  | TBD | TBD | Scenario/Technical |
+| L_10 | To test function value calculated in case of a single variable function | Function Coefficients | 0.125 | 0.125 | Scenario/Technical |
+| L_11 | To test function value calculated in case of a Dual variable function | Function Coefficients | 20.0 | 20.0 | Scenario/Technical |
+| L_12 | To test the code that plots an equation | Function | PNG Image | Correct Function in PNG Image | Screnario |
+| L_13 | To test the code that plots an equation with the result | Function and it's results | PNG Image | Correct Function in PNG Image | Screnario |
+| L_14 | To test whether the Euler method is able to obtain y(x) for a given x where y(x), is the solution of the given first order ODE | Function and the initial conditions along with x at which y(x) is to be found (given dy/dx = 3* x * x *y, find y(0.4)) | 1.04244 | 1.024244 | Scenario |
+| L_15 | To test whether the Euler method is able to plot y(x) where y(x) is the solution of a first order ODE | Function, initial conditions and step size (given dy/dx = 3* x * x *y) | generation of the values of x and y | x and y values were generated correctly | Scenario |
+| L_16 | To test whether the Euler-Modified method is able to obtain y(x) for a given x, where y(x) is the soltuion of the given first order ODE | Function and the initial conditions along with x at which y(x) is to be found (given dy/dx = 3* x * x *y, find y(0.6)) | 1.244249 | 1.244249 | Scenario |
+| L_17 | To test whether the Euler-Modified method is able to plot y(x) where y(x) is the solution of a first order ODE | Function, initial conditions and step size (given dy/dx = 3* x * x *y) | generation of the values of x and y | x and y values were generated correctly | Scenario |
+| L_18 | To test whether the Runge-Kutta method is able to obtain y(x) for a given x, where y(x) is the soltuion of the given first order ODE | Function and the initial conditions along with x at which y(x) is to be found (given dy/dx = 3* x * x *y, find y(0.9)) | 1.611935 | 1.611935 | Scenario |
+| L_19 | To test whether the Runge-Kutta is able to plot y(x) where y(x) is the solution of a first order ODE | Function, initial conditions and step size (given dy/dx = 3* x * x *y) | generation of the values of x and y | x and y values were generated correctly | Scenario |
+| L_20 | To test whether the Gauss Siedel method for solving system of linear equations | Function, initial conditions and coefficients of equations | 1,-1,1 | 1,-1,1 | Scenario/Technical |
+| L_21 | To test whether the second order PDE heat equation solving and resultant values | Boundary Conditions , step size  | 58.09 | 58.09 | Scenario/Technical |
+| L_22 | To test whether the working of function for  initial conditions | Functional coefficients  | 3.45| 3.45 | Scenario/Technical |

@@ -1,3 +1,13 @@
+/**
+ * @file value_accept.c
+ * @author Ayushman (ayushman.ranu@ltts.com)
+ * @brief Accepts coefficients from user
+ * @version 0.1
+ * @date 2021-05-25
+ * 
+ * @copyright Copyright (c) 2021
+ * 
+ */
 #include "input.h"
 
 int num_degree=0,den_degree=0;
@@ -61,17 +71,36 @@ void accept_functhree()
 
 double test_function(float x)
 {
+    reset_values();
     num_degree=2;den_degree=1;
     num_coeff[2]=1;
     den_coeff[1]=2;den_coeff[0]=1;
     double return_value=(calculate(x));
+    reset_values();
     return return_value;
 }
 
 double test_functiontwo(float x,float y)
 {
+    reset_values();
     xdeg=2;ydeg=2;
     arr[2][0]=1; arr[0][2]=1;arr[1][1]=2;arr[0][0]=4;
     double return_value=calculatetwo(x,y);
+    reset_values();
     return return_value;
+}
+void reset_values()
+{
+    num_degree=0,den_degree=0;
+    funct=0;nu=0;
+    for(int i=0;i<10;i++)
+        num_coeff[i]=0;
+    for(int i=0;i<10;i++)
+        den_coeff[i]=0;
+    xdeg=0;ydeg=0;
+    for(int i=0;i<5;i++)
+    {
+        for(int j=0;j<5;j++)
+        arr[i][j]=0;
+    }
 }

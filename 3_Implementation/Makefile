@@ -8,7 +8,6 @@ src/trigo.c\
 src/Bisection.c\
 src/value_accept.c\
 src/calculation.c\
-src/Newton_Raphson.c\
 src/choice.c\
 src/function_plot.c\
 src/pbPlots.c\
@@ -23,7 +22,11 @@ src/PDE_heat.c\
 src/Gauss_siedel.c\
 src/laplace.c\
 src/odenm.c\
-src/user_Choice.c
+src/user_Choice.c \
+src/simpson_1_3.c \
+src/trapezoidal.c \
+src/simpson_3_8.c \
+src/numerical_integration.c 
 
 
 TEST_SRC = test/test.c \
@@ -45,7 +48,10 @@ else
    endif
 endif
 
-.PHONY : all test run clean
+# Document files
+DOCUMENTATION_OUTPUT = documentation/html
+
+.PHONY : all test run clean doc
 
 all: $(SRC)
 	gcc main.c $(SRC) $(INC) -lm -o $(call FixPath,$(PROJ_NAME).$(EXEC))
@@ -55,7 +61,7 @@ run: $(PROJ_NAME).$(EXEC)
 
 test: $(SRC) $(TEST_SRC)
 	gcc $(TEST_SRC) $(SRC) $(INC) $(INC_T) -lm -o $(TEST_PROJ_NAME).$(EXEC)
-	./$(TEST_PROJ_NAME).$(EXEC)
+	$(TEST_PROJ_NAME).$(EXEC)
 
 coverage: $(PROJ_NAME).$(EXEC)
 	gcc -fprofile-arcs -ftest-coverage main.c $(SRC) $(INC) -lm -o $(PROJ_NAME).$(EXEC)
@@ -68,7 +74,12 @@ staticcheck:
 memcheck:
 	valgrind ./$(PROJ_NAME).$(EXEC)
 
+
 clean:
-	$(RM) *.$(EXEC) *.gcov *.gcda *.gcno *.png
+	$(RM) *.$(EXEC) *.gcov *.gcda *.gcno *.png 
 
 analyze: all run test coverage staticcheck memcheck clean
+
+# Document the code using Doxygen
+doc:
+	doxygen ./$(DOXY_FILE)

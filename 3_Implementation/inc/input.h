@@ -25,7 +25,7 @@ extern int ydeg;
 extern int arr[][5];
 extern int nu;
 extern int ari;
-extern int fun;
+extern int funct;
 extern char str[];
 
 /**
@@ -110,7 +110,26 @@ double test_function(float);
  * @return double 
  */
 double test_functiontwo(float,float);
+
+/**
+ * @brief Function for accepting values for root function
+ * 
+ */
 void accept_functhree();
+
+/**
+ * @brief Calculate function value
+ * 
+ * @param x 
+ * @return double 
+ */
 double calculatethree(double x);
+
+/**
+ * @brief Resets coefficients
+ * 
+ */
+void reset_values();
+
 
 #endif

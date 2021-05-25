@@ -42,7 +42,7 @@ void user_choice(){
         break;
         case 3:
          printf("Enter the boundary values for lower , upper  left , right");
-         int leftt,rightt,upp,downn;
+         float leftt,rightt,upp,downn;
         scanf ("%f %f %f % f",&leftt,&rightt,&upp,&downn);
          solved_laplace=laplace(leftt,rightt,downn,upp);
          printf("The values of x and y after solving  \n");
