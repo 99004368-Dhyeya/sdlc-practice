@@ -4,7 +4,7 @@ A group project in C for LTTS Genesis Training.
 Badge Name | Status |
 -----------|---------|
 Build |[![CI](https://github.com/99004368-Dhyeya/sdlc-practice/actions/workflows/main.yml/badge.svg)](https://github.com/99004368-Dhyeya/sdlc-practice/actions/workflows/main.yml)|
-Static Analysis Cppcheck |---To be Added---|
+Static Analysis Cppcheck |[![Code Quality - Static Analysis - Cppcheck](https://github.com/99004368-Dhyeya/sdlc-practice/actions/workflows/cpp-check.yml/badge.svg)](https://github.com/99004368-Dhyeya/sdlc-practice/actions/workflows/cpp-check.yml)|
 Codeacy Code Quality |---To be Added---|
 Valgrind Dynamic Analysis |---To be Added---|
 Code Coverage |---To be Added---|
