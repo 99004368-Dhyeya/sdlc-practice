@@ -1,0 +1,28 @@
+var struct_bar_plot_settings =
+[
+    [ "autoBoundaries", "struct_bar_plot_settings.html#a5678388f8e5314926e4b63b36b9bea55", null ],
+    [ "autoColor", "struct_bar_plot_settings.html#a7a2d48fa3b7c979b591ef556aac23f05", null ],
+    [ "autoLabels", "struct_bar_plot_settings.html#a59616856d4d1f0283d03ad5ba0f49e6d", null ],
+    [ "autoPadding", "struct_bar_plot_settings.html#ad364dc2c7be04227215b871ea6b5b41e", null ],
+    [ "autoSpacing", "struct_bar_plot_settings.html#a43d3a417c2fabfcac89a2a459d900c00", null ],
+    [ "barBorder", "struct_bar_plot_settings.html#aa5648d8b1cc6fb75c7974ae2f155d41c", null ],
+    [ "barPlotSeries", "struct_bar_plot_settings.html#a0ff320d10f0fac9972c1881f043466ec", null ],
+    [ "barPlotSeriesLength", "struct_bar_plot_settings.html#a11a2056d4d3324efac5ee8f7c1761611", null ],
+    [ "barSeparation", "struct_bar_plot_settings.html#a004f2be66e099ae9c0b032d106bf8d6e", null ],
+    [ "grayscaleAutoColor", "struct_bar_plot_settings.html#a3d44d2269b3f53d5cae7680dc9d28568", null ],
+    [ "gridColor", "struct_bar_plot_settings.html#a5cb2146863ea8055a3ae454320a8680a", null ],
+    [ "groupSeparation", "struct_bar_plot_settings.html#a584367a4d80d2d25413d2398cbf9e203", null ],
+    [ "height", "struct_bar_plot_settings.html#a89f6abd564014faeff7cd20c340a9c7d", null ],
+    [ "showGrid", "struct_bar_plot_settings.html#a69827c7d345281b17ecc40280fd57bd8", null ],
+    [ "title", "struct_bar_plot_settings.html#a9778afa60511b8cf8850f54c66b90110", null ],
+    [ "titleLength", "struct_bar_plot_settings.html#a0140a949f96be8963006f06815300bdc", null ],
+    [ "width", "struct_bar_plot_settings.html#a9df23e056f5d1a0388cd8190431c0e03", null ],
+    [ "xLabels", "struct_bar_plot_settings.html#a1ec5d71a00f5c32173e2f723398d21de", null ],
+    [ "xLabelsLength", "struct_bar_plot_settings.html#aedf9727d293bbe6d9363b5592317c86c", null ],
+    [ "xPadding", "struct_bar_plot_settings.html#a2bbcd0f23d12133ac66507483b6379b8", null ],
+    [ "yLabel", "struct_bar_plot_settings.html#a1c0720a31f304b4149f0aa30eb40cf11", null ],
+    [ "yLabelLength", "struct_bar_plot_settings.html#a4a9e37c39a429d38609294385352c6a1", null ],
+    [ "yMax", "struct_bar_plot_settings.html#a0d6c1993983b373f049cf11435200fb7", null ],
+    [ "yMin", "struct_bar_plot_settings.html#a20d4c5d114c7d71b216de17d8351b407", null ],
+    [ "yPadding", "struct_bar_plot_settings.html#ac173e8b435b637f164c87b40a1c344b4", null ]
+];

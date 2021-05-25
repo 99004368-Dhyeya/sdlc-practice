@@ -1,0 +1,28 @@
+var dir_a74e854f16ce779f2c47ab5a4e5dbfa4 =
+[
+    [ "Bisection.c", "_bisection_8c.html", "_bisection_8c" ],
+    [ "calculateTime.c", "calculate_time_8c.html", "calculate_time_8c" ],
+    [ "calculation.c", "calculation_8c.html", "calculation_8c" ],
+    [ "choice.c", "choice_8c.html", "choice_8c" ],
+    [ "endTime.c", "end_time_8c.html", "end_time_8c" ],
+    [ "function_plot.c", "function__plot_8c.html", "function__plot_8c" ],
+    [ "Gauss_siedel.c", "_gauss__siedel_8c.html", "_gauss__siedel_8c" ],
+    [ "laplace.c", "laplace_8c.html", "laplace_8c" ],
+    [ "numerical_integration.c", "numerical__integration_8c.html", "numerical__integration_8c" ],
+    [ "odenm.c", "odenm_8c.html", "odenm_8c" ],
+    [ "pbPlots.c", "pb_plots_8c.html", "pb_plots_8c" ],
+    [ "PDE_heat.c", "_p_d_e__heat_8c.html", "_p_d_e__heat_8c" ],
+    [ "plot_pointer_function.c", "plot__pointer__function_8c.html", "plot__pointer__function_8c" ],
+    [ "points_function_plot.c", "points__function__plot_8c.html", "points__function__plot_8c" ],
+    [ "root.c", "root_8c.html", "root_8c" ],
+    [ "simpson_1_3.c", "simpson__1__3_8c.html", "simpson__1__3_8c" ],
+    [ "simpson_3_8.c", "simpson__3__8_8c.html", "simpson__3__8_8c" ],
+    [ "startTime.c", "start_time_8c.html", "start_time_8c" ],
+    [ "supportLib.c", "support_lib_8c.html", "support_lib_8c" ],
+    [ "testWritePNG.c", "test_write_p_n_g_8c.html", "test_write_p_n_g_8c" ],
+    [ "trapezoidal.c", "trapezoidal_8c.html", "trapezoidal_8c" ],
+    [ "trigo.c", "trigo_8c.html", "trigo_8c" ],
+    [ "trigo_calc.c", "trigo__calc_8c.html", "trigo__calc_8c" ],
+    [ "user_Choice.c", "user___choice_8c.html", "user___choice_8c" ],
+    [ "value_accept.c", "value__accept_8c.html", "value__accept_8c" ]
+];

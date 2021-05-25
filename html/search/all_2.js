@@ -1,0 +1,27 @@
+var searchData=
+[
+  ['b_80',['b',['../struct_r_g_b_a.html#a1510a66dacf9cf3586de5fc89ae2a073',1,'RGBA']]],
+  ['bankersround_81',['BankersRound',['../pb_plots_8h.html#ad674ada879591e02d23a1c60b242466e',1,'BankersRound(double x):&#160;pbPlots.c'],['../pb_plots_8c.html#ad674ada879591e02d23a1c60b242466e',1,'BankersRound(double x):&#160;pbPlots.c']]],
+  ['barborder_82',['barBorder',['../struct_bar_plot_settings.html#aa5648d8b1cc6fb75c7974ae2f155d41c',1,'BarPlotSettings']]],
+  ['barplotseries_83',['BarPlotSeries',['../struct_bar_plot_series.html',1,'BarPlotSeries'],['../pb_plots_8h.html#aa98317f262f38a40ecfff0c79942ba5f',1,'BarPlotSeries():&#160;pbPlots.h']]],
+  ['barplotseries_84',['barPlotSeries',['../struct_bar_plot_settings.html#a0ff320d10f0fac9972c1881f043466ec',1,'BarPlotSettings']]],
+  ['barplotserieslength_85',['barPlotSeriesLength',['../struct_bar_plot_settings.html#a11a2056d4d3324efac5ee8f7c1761611',1,'BarPlotSettings']]],
+  ['barplotsettings_86',['BarPlotSettings',['../struct_bar_plot_settings.html',1,'BarPlotSettings'],['../pb_plots_8h.html#a896c77e47773a9d5489d04cf0f17e88e',1,'BarPlotSettings():&#160;pbPlots.h']]],
+  ['barplotsettingsisvalid_87',['BarPlotSettingsIsValid',['../pb_plots_8h.html#a7ed1927504397cf752c90a095041bbca',1,'BarPlotSettingsIsValid(BarPlotSettings *settings):&#160;pbPlots.c'],['../pb_plots_8c.html#a7ed1927504397cf752c90a095041bbca',1,'BarPlotSettingsIsValid(BarPlotSettings *settings):&#160;pbPlots.c']]],
+  ['barseparation_88',['barSeparation',['../struct_bar_plot_settings.html#a004f2be66e099ae9c0b032d106bf8d6e',1,'BarPlotSettings']]],
+  ['begin_89',['begin',['../runtime_measure_8h.html#ab7f89cd88676254c74ba6aaca1097073',1,'begin():&#160;startTime.c'],['../start_time_8c.html#ab7f89cd88676254c74ba6aaca1097073',1,'begin():&#160;startTime.c']]],
+  ['bernouillinumber_90',['BernouilliNumber',['../pb_plots_8h.html#a3537b9c401fa69fede6863b25b7dd55f',1,'BernouilliNumber(double n):&#160;pbPlots.c'],['../pb_plots_8c.html#a3537b9c401fa69fede6863b25b7dd55f',1,'BernouilliNumber(double n):&#160;pbPlots.c']]],
+  ['beta_91',['Beta',['../pb_plots_8h.html#a6bba5f2d0a5859ca36f6f49f97b34171',1,'Beta(double x, double y):&#160;pbPlots.c'],['../pb_plots_8c.html#a6bba5f2d0a5859ca36f6f49f97b34171',1,'Beta(double x, double y):&#160;pbPlots.c']]],
+  ['bisection_92',['Bisection',['../root_8h.html#af0c5e340754e7a2f25bcbf89fc213bce',1,'Bisection(float, float):&#160;Bisection.c'],['../_bisection_8c.html#a62cb0ed5b38f5a6ae4f465cea8676868',1,'Bisection(float upp_lim, float low_lim):&#160;Bisection.c']]],
+  ['bisection_2ec_93',['Bisection.c',['../_bisection_8c.html',1,'']]],
+  ['bitdepth_94',['BitDepth',['../struct_i_h_d_r.html#a8a7e769962b8d4fd4d10047ee24d1a64',1,'IHDR']]],
+  ['bitextract_95',['BitExtract',['../pb_plots_8h.html#a39336e3cfc40511e4a6684cb5da26909',1,'BitExtract(double b, double fromInc, double toInc):&#160;pbPlots.c'],['../pb_plots_8c.html#a39336e3cfc40511e4a6684cb5da26909',1,'BitExtract(double b, double fromInc, double toInc):&#160;pbPlots.c']]],
+  ['blur_96',['Blur',['../pb_plots_8h.html#a81385cf2ec89f9d259a6eddbab85dac2',1,'Blur(RGBABitmapImage *src, double pixels):&#160;pbPlots.c'],['../pb_plots_8c.html#a81385cf2ec89f9d259a6eddbab85dac2',1,'Blur(RGBABitmapImage *src, double pixels):&#160;pbPlots.c']]],
+  ['booleanarray_97',['booleanArray',['../struct_boolean_array_reference.html#aaf8ea9886bcf9c8d3dad4149582f18fe',1,'BooleanArrayReference']]],
+  ['booleanarraylength_98',['booleanArrayLength',['../struct_boolean_array_reference.html#ac6f3962f1b9c363ddc186092ab0a6d13',1,'BooleanArrayReference']]],
+  ['booleanarrayreference_99',['BooleanArrayReference',['../struct_boolean_array_reference.html',1,'BooleanArrayReference'],['../pb_plots_8h.html#a6d39fbada96e4aca547a88c71c96093a',1,'BooleanArrayReference():&#160;pbPlots.h']]],
+  ['booleanreference_100',['BooleanReference',['../struct_boolean_reference.html',1,'BooleanReference'],['../pb_plots_8h.html#a559acbec06856b50adfd5ef32fb520d7',1,'BooleanReference():&#160;pbPlots.h']]],
+  ['booleanvalue_101',['booleanValue',['../struct_boolean_reference.html#a81293e476df7dc2de5d045ef053447e0',1,'BooleanReference']]],
+  ['bresenhamscircledrawingalgorithm_102',['BresenhamsCircleDrawingAlgorithm',['../pb_plots_8h.html#a241aeeaeff2cf87f6461d7714dfba14b',1,'BresenhamsCircleDrawingAlgorithm(RGBABitmapImage *canvas, double xCenter, double yCenter, double radius, RGBA *color):&#160;pbPlots.c'],['../pb_plots_8c.html#a241aeeaeff2cf87f6461d7714dfba14b',1,'BresenhamsCircleDrawingAlgorithm(RGBABitmapImage *canvas, double xCenter, double yCenter, double radius, RGBA *color):&#160;pbPlots.c']]],
+  ['bytearraytodoublearray_103',['ByteArrayToDoubleArray',['../support_lib_8h.html#a26c357a674c740218989978f69fbe70f',1,'ByteArrayToDoubleArray(unsigned char *data, size_t length):&#160;supportLib.c'],['../support_lib_8c.html#a26c357a674c740218989978f69fbe70f',1,'ByteArrayToDoubleArray(unsigned char *data, size_t length):&#160;supportLib.c']]]
+];

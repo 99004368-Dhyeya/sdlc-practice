@@ -1,0 +1,19 @@
+var searchData=
+[
+  ['charactervalue_2099',['characterValue',['../struct_character_reference.html#a45ca9e249f0ea26e54f8d118bfd4310f',1,'CharacterReference']]],
+  ['cinfo_2100',['CINFO',['../struct_z_l_i_b_struct.html#a12d2913e6b83ac020cf56e58c4e71c23',1,'ZLIBStruct']]],
+  ['cm_2101',['CM',['../struct_z_l_i_b_struct.html#a3b269f16a0a1692f745d8477438702d5',1,'ZLIBStruct']]],
+  ['cmf_2102',['CMF',['../struct_z_l_i_b_struct.html#a3b4f9b98348bb6de6b1f51e7d0560ec9',1,'ZLIBStruct']]],
+  ['color_2103',['color',['../struct_scatter_plot_series.html#a5578a81e2e53f3b54080e9d501f07c7a',1,'ScatterPlotSeries::color()'],['../struct_bar_plot_series.html#a5578a81e2e53f3b54080e9d501f07c7a',1,'BarPlotSeries::color()']]],
+  ['colourtype_2104',['ColourType',['../struct_i_h_d_r.html#acb1937ada56d0bf3b73ddd29cb9c6f44',1,'IHDR']]],
+  ['compresseddatablocks_2105',['CompressedDataBlocks',['../struct_z_l_i_b_struct.html#ad70ffbaec35718d6ae7feb5f3e2806a1',1,'ZLIBStruct']]],
+  ['compresseddatablockslength_2106',['CompressedDataBlocksLength',['../struct_z_l_i_b_struct.html#a8d1e8c9cfd3537b64b33804ce3c882e2',1,'ZLIBStruct']]],
+  ['compressionmethod_2107',['CompressionMethod',['../struct_i_h_d_r.html#a88a1427eff05af481da9bd277356fdd9',1,'IHDR']]],
+  ['crc_2108',['crc',['../struct_chunk.html#a381bd89f3a55e8ecea923741e5023e3f',1,'Chunk']]],
+  ['currentdetail1_2109',['CurrentDetail1',['../struct_u_n_i_t_y___s_t_o_r_a_g_e___t.html#a83cef77fb47897cfe6c4dba18d9f36c0',1,'UNITY_STORAGE_T']]],
+  ['currentdetail2_2110',['CurrentDetail2',['../struct_u_n_i_t_y___s_t_o_r_a_g_e___t.html#a46f31dad8da75fe0c1ece891fbb3208b',1,'UNITY_STORAGE_T']]],
+  ['currenttestfailed_2111',['CurrentTestFailed',['../struct_u_n_i_t_y___s_t_o_r_a_g_e___t.html#a60446b592f7989b0f639da4132032a43',1,'UNITY_STORAGE_T']]],
+  ['currenttestignored_2112',['CurrentTestIgnored',['../struct_u_n_i_t_y___s_t_o_r_a_g_e___t.html#ad69a0f6ea7ca97f43b963c8218eca9d6',1,'UNITY_STORAGE_T']]],
+  ['currenttestlinenumber_2113',['CurrentTestLineNumber',['../struct_u_n_i_t_y___s_t_o_r_a_g_e___t.html#af263a120c12a489e9310ef9f36444128',1,'UNITY_STORAGE_T']]],
+  ['currenttestname_2114',['CurrentTestName',['../struct_u_n_i_t_y___s_t_o_r_a_g_e___t.html#a6779e1e7dc5d26835d5ca7009242e77c',1,'UNITY_STORAGE_T']]]
+];

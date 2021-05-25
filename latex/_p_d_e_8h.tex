@@ -1,0 +1,84 @@
+\doxysection{C\+:/\+Users/\+Dhyeya/\+Desktop/\+SDLC\+\_\+\+Project/sdlc-\/team-\/4/3\+\_\+\+Implementation/inc/\+PDE.h File Reference}
+\label{_p_d_e_8h}\index{C:/Users/Dhyeya/Desktop/SDLC\_Project/sdlc-\/team-\/4/3\_Implementation/inc/PDE.h@{C:/Users/Dhyeya/Desktop/SDLC\_Project/sdlc-\/team-\/4/3\_Implementation/inc/PDE.h}}
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$math.\+h$>$}\newline
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \textbf{ X}~8
+\item 
+\#define \textbf{ T}~5
+\item 
+\#define \textbf{ T}~5
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+float $\ast$ \textbf{ heat} (float c, float us, float ue)
+\begin{DoxyCompactList}\small\item\em it solves the PDE Equation \end{DoxyCompactList}\item 
+float \textbf{ fun} (int a)
+\begin{DoxyCompactList}\small\item\em initial tempuarture charecteristics of surface \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\label{_p_d_e_8h_a0acb682b8260ab1c60b918599864e2e5}} 
+\index{PDE.h@{PDE.h}!T@{T}}
+\index{T@{T}!PDE.h@{PDE.h}}
+\doxysubsubsection{T\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \#define T~5}
+
+\mbox{\label{_p_d_e_8h_a0acb682b8260ab1c60b918599864e2e5}} 
+\index{PDE.h@{PDE.h}!T@{T}}
+\index{T@{T}!PDE.h@{PDE.h}}
+\doxysubsubsection{T\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \#define T~5}
+
+\mbox{\label{_p_d_e_8h_a207fd5507206d307cd63f95374fcd00d}} 
+\index{PDE.h@{PDE.h}!X@{X}}
+\index{X@{X}!PDE.h@{PDE.h}}
+\doxysubsubsection{X}
+{\footnotesize\ttfamily \#define X~8}
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\label{_p_d_e_8h_a6bffb1ef1407b0ab67523d0a1d1f55a3}} 
+\index{PDE.h@{PDE.h}!fun@{fun}}
+\index{fun@{fun}!PDE.h@{PDE.h}}
+\doxysubsubsection{fun()}
+{\footnotesize\ttfamily float fun (\begin{DoxyParamCaption}\item[{int}]{a }\end{DoxyParamCaption})}
+
+
+
+initial tempuarture charecteristics of surface 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & space coordinate \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+float the tempuarture at time t=0; 
+\end{DoxyReturn}
+\mbox{\label{_p_d_e_8h_a33e6bb7d800aca7249ce9a94e0076914}} 
+\index{PDE.h@{PDE.h}!heat@{heat}}
+\index{heat@{heat}!PDE.h@{PDE.h}}
+\doxysubsubsection{heat()}
+{\footnotesize\ttfamily float$\ast$ heat (\begin{DoxyParamCaption}\item[{float}]{c,  }\item[{float}]{us,  }\item[{float}]{ue }\end{DoxyParamCaption})}
+
+
+
+it solves the PDE Equation 
+
+
+\begin{DoxyParams}{Parameters}
+{\em c} & Thermal Coedffiecent \\
+\hline
+{\em us} & Tempurature of the heat source \\
+\hline
+{\em ue} & tempurature of other source \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+float$\ast$ Tempurature change with time and space 
+\end{DoxyReturn}

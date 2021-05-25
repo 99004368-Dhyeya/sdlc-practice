@@ -1,0 +1,25 @@
+var searchData=
+[
+  ['naturallogarithm_427',['NaturalLogarithm',['../pb_plots_8h.html#ae6b667f92bb8ed18bbc141d123655f93',1,'NaturalLogarithm(double x):&#160;pbPlots.c'],['../pb_plots_8c.html#ae6b667f92bb8ed18bbc141d123655f93',1,'NaturalLogarithm(double x):&#160;pbPlots.c']]],
+  ['negate_428',['Negate',['../pb_plots_8h.html#ab6d090162f8d3ea0e2045ab0983d6e39',1,'Negate(double x):&#160;pbPlots.c'],['../pb_plots_8c.html#ab6d090162f8d3ea0e2045ab0983d6e39',1,'Negate(double x):&#160;pbPlots.c']]],
+  ['next_429',['next',['../struct_linked_list_node_strings.html#afc97a2cbb6db34a69e4f8476d4a5f32d',1,'LinkedListNodeStrings::next()'],['../struct_linked_list_node_numbers.html#a2227ae2b4f86edcd990792f43a0844de',1,'LinkedListNodeNumbers::next()'],['../struct_linked_list_node_characters.html#a52293d4c2b55dc202f12aceb0698ceab',1,'LinkedListNodeCharacters::next()']]],
+  ['not2byte_430',['Not2Byte',['../pb_plots_8h.html#ab4ab64fa854a5f4989dd34f5d05b8805',1,'Not2Byte(double b):&#160;pbPlots.c'],['../pb_plots_8c.html#ab4ab64fa854a5f4989dd34f5d05b8805',1,'Not2Byte(double b):&#160;pbPlots.c']]],
+  ['not4byte_431',['Not4Byte',['../pb_plots_8h.html#a8a484f290813c8f388c55c4de4e6123c',1,'Not4Byte(double b):&#160;pbPlots.c'],['../pb_plots_8c.html#a8a484f290813c8f388c55c4de4e6123c',1,'Not4Byte(double b):&#160;pbPlots.c']]],
+  ['notbyte_432',['NotByte',['../pb_plots_8c.html#a3bda3bfd7e4b2db20d30471450ac617b',1,'NotByte(double b):&#160;pbPlots.c'],['../pb_plots_8h.html#a3bda3bfd7e4b2db20d30471450ac617b',1,'NotByte(double b):&#160;pbPlots.c']]],
+  ['notbytes_433',['NotBytes',['../pb_plots_8c.html#a239594fb890de489cf6ef0ea4e6e19ae',1,'NotBytes(double b, double length):&#160;pbPlots.c'],['../pb_plots_8h.html#a239594fb890de489cf6ef0ea4e6e19ae',1,'NotBytes(double b, double length):&#160;pbPlots.c']]],
+  ['nu_434',['nu',['../input_8h.html#adb40d5e571adca5a45efc67a2cd82f38',1,'nu():&#160;trigo.c'],['../trigo_8c.html#adb40d5e571adca5a45efc67a2cd82f38',1,'nu():&#160;trigo.c']]],
+  ['num_5fco_435',['num_co',['../root_8h.html#ab1d11fbb7daba4e6ce50e36af5606b9f',1,'root.h']]],
+  ['num_5fcoeff_436',['num_coeff',['../input_8h.html#a5b7ed4a7308031f4efe2f50d4b47020d',1,'num_coeff():&#160;value_accept.c'],['../value__accept_8c.html#a39c97e104da1522ce9355f993f091b2f',1,'num_coeff():&#160;value_accept.c']]],
+  ['num_5fdegree_437',['num_degree',['../input_8h.html#af76808bfdf32beb795974fac2e1ea642',1,'num_degree():&#160;value_accept.c'],['../value__accept_8c.html#af76808bfdf32beb795974fac2e1ea642',1,'num_degree():&#160;value_accept.c']]],
+  ['numberarray_438',['numberArray',['../struct_number_array_reference.html#a87f907ad1acf82342f27409b8dc24772',1,'NumberArrayReference']]],
+  ['numberarraylength_439',['numberArrayLength',['../struct_number_array_reference.html#a1cf6fc1838a5a9ce5d26991dc2a85bc1',1,'NumberArrayReference']]],
+  ['numberarrayreference_440',['NumberArrayReference',['../struct_number_array_reference.html',1,'NumberArrayReference'],['../pb_plots_8h.html#ae733033fb0c618617678d10bc1a33fb6',1,'NumberArrayReference():&#160;pbPlots.h']]],
+  ['numberoftests_441',['NumberOfTests',['../struct_u_n_i_t_y___s_t_o_r_a_g_e___t.html#a82127e77cd34e1a1c2b0281e3597d5ba',1,'UNITY_STORAGE_T']]],
+  ['numberreference_442',['NumberReference',['../struct_number_reference.html',1,'NumberReference'],['../pb_plots_8h.html#ad8afe650f934369e0cb197aadae641e2',1,'NumberReference():&#160;pbPlots.h']]],
+  ['numbervalue_443',['numberValue',['../struct_number_reference.html#aa5be9b9b70ba596fdb532a82d1a0647a',1,'NumberReference']]],
+  ['numerical_5fintegration_444',['numerical_integration',['../anm_8h.html#a71ff7ac13224bc0cf9001172d1f53365',1,'numerical_integration(char choice):&#160;numerical_integration.c'],['../numerical__integration_8c.html#a71ff7ac13224bc0cf9001172d1f53365',1,'numerical_integration(char choice):&#160;numerical_integration.c']]],
+  ['numerical_5fintegration_2ec_445',['numerical_integration.c',['../numerical__integration_8c.html',1,'']]],
+  ['numerical_5fode_446',['numerical_ode',['../odenm_8h.html#abc5c767385ceba2d6cef75e23aff1ff3',1,'numerical_ode(char choice):&#160;odenm.c'],['../odenm_8c.html#abc5c767385ceba2d6cef75e23aff1ff3',1,'numerical_ode(char choice):&#160;odenm.c']]],
+  ['numofdatapoints_447',['numOfdataPoints',['../structodeplot.html#a0e80fff6ea47f1dc8bf0195a320cbc40',1,'odeplot']]],
+  ['numofpoints_448',['numOfPoints',['../structodesolve.html#a68210d7fe5e6796138dbfd8bcab8cc0b',1,'odesolve']]]
+];

@@ -1,0 +1,265 @@
+\doxysection{C\+:/\+Users/\+Dhyeya/\+Desktop/\+SDLC\+\_\+\+Project/sdlc-\/team-\/4/3\+\_\+\+Implementation/inc/odenm.h File Reference}
+\label{odenm_8h}\index{C:/Users/Dhyeya/Desktop/SDLC\_Project/sdlc-\/team-\/4/3\_Implementation/inc/odenm.h@{C:/Users/Dhyeya/Desktop/SDLC\_Project/sdlc-\/team-\/4/3\_Implementation/inc/odenm.h}}
+
+
+File that contains the various methods that can be used to solve ordinary differential equations using numerical analysis.  
+
+
+\doxysubsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \textbf{ odeplot}
+\begin{DoxyCompactList}\small\item\em Defining the structure that contains the variables required to plot the numerical solution of the ODE These variables include the initial conditions, the step size and the number of data points the user wants to generate. \end{DoxyCompactList}\item 
+struct \textbf{ odesolve}
+\begin{DoxyCompactList}\small\item\em Defining the structure that contains the variables required only to find the y value of the solution of the numerical equation at a particular point. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \textbf{ \+\_\+\+\_\+\+ODENM\+\_\+\+H\+\_\+\+\_\+}
+\end{DoxyCompactItemize}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \textbf{ odeplot} \textbf{ odeplotvar}
+\begin{DoxyCompactList}\small\item\em Defining the structure that contains the variables required to plot the numerical solution of the ODE These variables include the initial conditions, the step size and the number of data points the user wants to generate. \end{DoxyCompactList}\item 
+typedef struct \textbf{ odesolve} \textbf{ odesolvevar}
+\begin{DoxyCompactList}\small\item\em Defining the structure that contains the variables required only to find the y value of the solution of the numerical equation at a particular point. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \textbf{ user\+Choice} ()
+\item 
+void \textbf{ user\+Input} (int \textbf{ choice})
+\begin{DoxyCompactList}\small\item\em function that gets data required for obtaining the numerical solution of the ODE from the user depending on the type of solution the user has chosen \end{DoxyCompactList}\item 
+void \textbf{ numerical\+\_\+ode} (char \textbf{ choice})
+\begin{DoxyCompactList}\small\item\em Function that decides which method the user wants to use to solve a first order ODE. \end{DoxyCompactList}\item 
+double \textbf{ Euler\+Formula} (double xn, double yn, double stepsize)
+\begin{DoxyCompactList}\small\item\em Function that implements the Euler method for numerical solution of first order ODE. \end{DoxyCompactList}\item 
+double \textbf{ Euler\+Modified\+Formula} (double xn, double yn, double stepsize)
+\begin{DoxyCompactList}\small\item\em Function that implements the Euler-\/modified method for numerical solution of first order ode. \end{DoxyCompactList}\item 
+double \textbf{ Runge\+Kutta\+Formula} (double xn, double yn, double stepsize)
+\begin{DoxyCompactList}\small\item\em Function that implements the Runge-\/\+Kutta method for numerical solution of first order ode. \end{DoxyCompactList}\item 
+void \textbf{ print} (int num\+Of\+Points)
+\begin{DoxyCompactList}\small\item\em Function to print some of the generated points. \end{DoxyCompactList}\item 
+void \textbf{ ode\+Solver} (int \textbf{ choice}, char method)
+\begin{DoxyCompactList}\small\item\em Function that solves the ODE according to various methods and gives point solution or graph solution based on user input. \end{DoxyCompactList}\item 
+double \textbf{ Euler\+Formula\+Test} (double xn, double yn, double stepsize)
+\item 
+double \textbf{ Euler\+Modified\+Formula\+Test} (double xn, double yn, double stepsize)
+\item 
+double \textbf{ Runge\+Kutta\+Formula\+Test} (double xn, double yn, double stepsize)
+\item 
+double \textbf{ dummycalculatetwo} (double, double)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+File that contains the various methods that can be used to solve ordinary differential equations using numerical analysis. 
+
+\begin{DoxyAuthor}{Author}
+Jayasri Vaidyaraman ({\texttt{ jayasri.\+vaidyaraman@ltts.\+com}}) 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2021-\/05-\/22
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+Copyright (c) 2021 
+\end{DoxyCopyright}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\label{odenm_8h_ab9a92e1594c357646dae142ce3ce0978}} 
+\index{odenm.h@{odenm.h}!\_\_ODENM\_H\_\_@{\_\_ODENM\_H\_\_}}
+\index{\_\_ODENM\_H\_\_@{\_\_ODENM\_H\_\_}!odenm.h@{odenm.h}}
+\doxysubsubsection{\_\_ODENM\_H\_\_}
+{\footnotesize\ttfamily \#define \+\_\+\+\_\+\+ODENM\+\_\+\+H\+\_\+\+\_\+}
+
+
+
+\doxysubsection{Typedef Documentation}
+\mbox{\label{odenm_8h_a38682564b5a4e2e237ce0be49de12d86}} 
+\index{odenm.h@{odenm.h}!odeplotvar@{odeplotvar}}
+\index{odeplotvar@{odeplotvar}!odenm.h@{odenm.h}}
+\doxysubsubsection{odeplotvar}
+{\footnotesize\ttfamily typedef struct \textbf{ odeplot} \textbf{ odeplotvar}}
+
+
+
+Defining the structure that contains the variables required to plot the numerical solution of the ODE These variables include the initial conditions, the step size and the number of data points the user wants to generate. 
+
+\mbox{\label{odenm_8h_a7c3b2b5e3bb4d4df69368e02455e64db}} 
+\index{odenm.h@{odenm.h}!odesolvevar@{odesolvevar}}
+\index{odesolvevar@{odesolvevar}!odenm.h@{odenm.h}}
+\doxysubsubsection{odesolvevar}
+{\footnotesize\ttfamily typedef struct \textbf{ odesolve} \textbf{ odesolvevar}}
+
+
+
+Defining the structure that contains the variables required only to find the y value of the solution of the numerical equation at a particular point. 
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\label{odenm_8h_a78b24d8094853e8bf9ef6245d718c09f}} 
+\index{odenm.h@{odenm.h}!dummycalculatetwo@{dummycalculatetwo}}
+\index{dummycalculatetwo@{dummycalculatetwo}!odenm.h@{odenm.h}}
+\doxysubsubsection{dummycalculatetwo()}
+{\footnotesize\ttfamily double dummycalculatetwo (\begin{DoxyParamCaption}\item[{double}]{x,  }\item[{double}]{y }\end{DoxyParamCaption})}
+
+\mbox{\label{odenm_8h_a85759b743dce670ca86347070d883fa5}} 
+\index{odenm.h@{odenm.h}!EulerFormula@{EulerFormula}}
+\index{EulerFormula@{EulerFormula}!odenm.h@{odenm.h}}
+\doxysubsubsection{EulerFormula()}
+{\footnotesize\ttfamily double Euler\+Formula (\begin{DoxyParamCaption}\item[{double}]{xn,  }\item[{double}]{yn,  }\item[{double}]{stepsize }\end{DoxyParamCaption})}
+
+
+
+Function that implements the Euler method for numerical solution of first order ODE. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em xn} & takes the current value of x as input \\
+\hline
+\mbox{\texttt{ in}}  & {\em yn} & takes the current value of y as input \\
+\hline
+\mbox{\texttt{ in}}  & {\em stepsize} & is the value according to which xn is incremented \\
+\hline
+\mbox{\texttt{ out}}  & {\em double} & returns the y value of the next point \\
+\hline
+\end{DoxyParams}
+\mbox{\label{odenm_8h_a6189de5288ed2e300adc667a65a9cfe3}} 
+\index{odenm.h@{odenm.h}!EulerFormulaTest@{EulerFormulaTest}}
+\index{EulerFormulaTest@{EulerFormulaTest}!odenm.h@{odenm.h}}
+\doxysubsubsection{EulerFormulaTest()}
+{\footnotesize\ttfamily double Euler\+Formula\+Test (\begin{DoxyParamCaption}\item[{double}]{xn,  }\item[{double}]{yn,  }\item[{double}]{stepsize }\end{DoxyParamCaption})}
+
+\mbox{\label{odenm_8h_a768415eafc835b96672775100e0f6258}} 
+\index{odenm.h@{odenm.h}!EulerModifiedFormula@{EulerModifiedFormula}}
+\index{EulerModifiedFormula@{EulerModifiedFormula}!odenm.h@{odenm.h}}
+\doxysubsubsection{EulerModifiedFormula()}
+{\footnotesize\ttfamily double Euler\+Modified\+Formula (\begin{DoxyParamCaption}\item[{double}]{xn,  }\item[{double}]{yn,  }\item[{double}]{stepsize }\end{DoxyParamCaption})}
+
+
+
+Function that implements the Euler-\/modified method for numerical solution of first order ode. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em xn} & takes the current value of x as input \\
+\hline
+\mbox{\texttt{ in}}  & {\em yn} & takes the current value of y as input \\
+\hline
+\mbox{\texttt{ in}}  & {\em stepsize} & is the value according to which xn is incremented \\
+\hline
+\mbox{\texttt{ out}}  & {\em double} & returns the y value of the next point \\
+\hline
+\end{DoxyParams}
+\mbox{\label{odenm_8h_aac19cb67f47b3238cd11f685e9d90892}} 
+\index{odenm.h@{odenm.h}!EulerModifiedFormulaTest@{EulerModifiedFormulaTest}}
+\index{EulerModifiedFormulaTest@{EulerModifiedFormulaTest}!odenm.h@{odenm.h}}
+\doxysubsubsection{EulerModifiedFormulaTest()}
+{\footnotesize\ttfamily double Euler\+Modified\+Formula\+Test (\begin{DoxyParamCaption}\item[{double}]{xn,  }\item[{double}]{yn,  }\item[{double}]{stepsize }\end{DoxyParamCaption})}
+
+\mbox{\label{odenm_8h_abc5c767385ceba2d6cef75e23aff1ff3}} 
+\index{odenm.h@{odenm.h}!numerical\_ode@{numerical\_ode}}
+\index{numerical\_ode@{numerical\_ode}!odenm.h@{odenm.h}}
+\doxysubsubsection{numerical\_ode()}
+{\footnotesize\ttfamily void numerical\+\_\+ode (\begin{DoxyParamCaption}\item[{char}]{choice }\end{DoxyParamCaption})}
+
+
+
+Function that decides which method the user wants to use to solve a first order ODE. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em choice} & indicates whether the user wants to use the Euler method, Euler modified or the Runge Kutta method \\
+\hline
+\end{DoxyParams}
+\mbox{\label{odenm_8h_a83b4ad2c9136960ff7b73bb044faee74}} 
+\index{odenm.h@{odenm.h}!odeSolver@{odeSolver}}
+\index{odeSolver@{odeSolver}!odenm.h@{odenm.h}}
+\doxysubsubsection{odeSolver()}
+{\footnotesize\ttfamily void ode\+Solver (\begin{DoxyParamCaption}\item[{int}]{choice,  }\item[{char}]{method }\end{DoxyParamCaption})}
+
+
+
+Function that solves the ODE according to various methods and gives point solution or graph solution based on user input. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em choice} & user\textquotesingle{}s choice whether to obtain point solution or graphical solution \\
+\hline
+\mbox{\texttt{ in}}  & {\em method} & which gives which formula function to be called depending on the user\textquotesingle{}s choice \\
+\hline
+\end{DoxyParams}
+\mbox{\label{odenm_8h_a66f8ab66bb6e25e5a1ad290371d1c897}} 
+\index{odenm.h@{odenm.h}!print@{print}}
+\index{print@{print}!odenm.h@{odenm.h}}
+\doxysubsubsection{print()}
+{\footnotesize\ttfamily void print (\begin{DoxyParamCaption}\item[{int}]{num\+Of\+Points }\end{DoxyParamCaption})}
+
+
+
+Function to print some of the generated points. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em num\+Of\+Points} & number of data points stored in the array \\
+\hline
+\end{DoxyParams}
+\mbox{\label{odenm_8h_a761ea7994638d93d201e7d640f341431}} 
+\index{odenm.h@{odenm.h}!RungeKuttaFormula@{RungeKuttaFormula}}
+\index{RungeKuttaFormula@{RungeKuttaFormula}!odenm.h@{odenm.h}}
+\doxysubsubsection{RungeKuttaFormula()}
+{\footnotesize\ttfamily double Runge\+Kutta\+Formula (\begin{DoxyParamCaption}\item[{double}]{xn,  }\item[{double}]{yn,  }\item[{double}]{stepsize }\end{DoxyParamCaption})}
+
+
+
+Function that implements the Runge-\/\+Kutta method for numerical solution of first order ode. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em xn} & takes the current value of x as input \\
+\hline
+\mbox{\texttt{ in}}  & {\em yn} & takes the current value of y as input \\
+\hline
+\mbox{\texttt{ in}}  & {\em stepsize} & is the value according to which xn is incremented \\
+\hline
+\mbox{\texttt{ out}}  & {\em double} & returns the y value of the next point \\
+\hline
+\end{DoxyParams}
+\mbox{\label{odenm_8h_a2c165b5a0d5f601c5521f8bd88fbd868}} 
+\index{odenm.h@{odenm.h}!RungeKuttaFormulaTest@{RungeKuttaFormulaTest}}
+\index{RungeKuttaFormulaTest@{RungeKuttaFormulaTest}!odenm.h@{odenm.h}}
+\doxysubsubsection{RungeKuttaFormulaTest()}
+{\footnotesize\ttfamily double Runge\+Kutta\+Formula\+Test (\begin{DoxyParamCaption}\item[{double}]{xn,  }\item[{double}]{yn,  }\item[{double}]{stepsize }\end{DoxyParamCaption})}
+
+\mbox{\label{odenm_8h_a28e905da23dbeacc3801c10ae9490b4c}} 
+\index{odenm.h@{odenm.h}!userChoice@{userChoice}}
+\index{userChoice@{userChoice}!odenm.h@{odenm.h}}
+\doxysubsubsection{userChoice()}
+{\footnotesize\ttfamily int user\+Choice (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+function that decides whether the user wants to find y(x) for a given x for the ODE solution or visualise the graph of the numerical solution of the ODE 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ out}}  & {\em int} & returns the user\textquotesingle{}s choice \\
+\hline
+\end{DoxyParams}
+\mbox{\label{odenm_8h_a4dc17d61a3dd7897a258cb0edabe945a}} 
+\index{odenm.h@{odenm.h}!userInput@{userInput}}
+\index{userInput@{userInput}!odenm.h@{odenm.h}}
+\doxysubsubsection{userInput()}
+{\footnotesize\ttfamily void user\+Input (\begin{DoxyParamCaption}\item[{int}]{choice }\end{DoxyParamCaption})}
+
+
+
+function that gets data required for obtaining the numerical solution of the ODE from the user depending on the type of solution the user has chosen 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em choice} & varies depending on the solution the user wants \\
+\hline
+\end{DoxyParams}

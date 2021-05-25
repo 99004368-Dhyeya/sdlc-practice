@@ -1,0 +1,201 @@
+\doxysection{C\+:/\+Users/\+Dhyeya/\+Desktop/\+SDLC\+\_\+\+Project/sdlc-\/team-\/4/3\+\_\+\+Implementation/inc/plotfunctions.h File Reference}
+\label{plotfunctions_8h}\index{C:/Users/Dhyeya/Desktop/SDLC\_Project/sdlc-\/team-\/4/3\_Implementation/inc/plotfunctions.h@{C:/Users/Dhyeya/Desktop/SDLC\_Project/sdlc-\/team-\/4/3\_Implementation/inc/plotfunctions.h}}
+
+
+Header File for functions written to plot data.  
+
+
+{\ttfamily \#include \char`\"{}pb\+Plots.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}support\+Lib.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$unistd.\+h$>$}\newline
+{\ttfamily \#include $<$math.\+h$>$}\newline
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \textbf{ \+\_\+\+\_\+\+PLOTFUNCTIONS\+\_\+\+H\+\_\+\+\_\+}
+\end{DoxyCompactItemize}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef double($\ast$ \textbf{ function\+Pointer}) (double)
+\begin{DoxyCompactList}\small\item\em Including pb\+Plots Headers. \end{DoxyCompactList}\item 
+typedef enum \textbf{ plot\+\_\+check} \textbf{ plot\+\_\+check}
+\end{DoxyCompactItemize}
+\doxysubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \textbf{ plot\+\_\+check} \{ \textbf{ WRITE\+\_\+\+SUCCESS} = 0
+, \textbf{ WRITE\+\_\+\+FAILED} = -\/1
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \textbf{ test\+Write\+PNG} (char $\ast$name)
+\begin{DoxyCompactList}\small\item\em Function to test of the write is successful. \end{DoxyCompactList}\item 
+\textbf{ plot\+\_\+check} \textbf{ function\+\_\+plot} (\textbf{ function\+Pointer} Function)
+\begin{DoxyCompactList}\small\item\em Function to plot the equation. \end{DoxyCompactList}\item 
+\textbf{ plot\+\_\+check} \textbf{ points\+\_\+function\+\_\+plot} (\textbf{ function\+Pointer} Function, double $\ast$x\+Coordinates, double $\ast$y\+Coordinates, int data\+Points)
+\begin{DoxyCompactList}\small\item\em Function to plot equation with points. \end{DoxyCompactList}\item 
+\textbf{ plot\+\_\+check} \textbf{ plot\+\_\+pointer\+\_\+function} (double $\ast$x\+Coordinates, double $\ast$y\+Coordinates, int data\+Count)
+\begin{DoxyCompactList}\small\item\em Function to plot equation from Pointer Data. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+double $\ast$ \textbf{ xpoints}
+\item 
+double $\ast$ \textbf{ ypoints}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Header File for functions written to plot data. 
+
+\begin{DoxyAuthor}{Author}
+Gobikumaar Sivagnanam ~\newline
+ 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2021-\/05-\/22
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+Copyright (c) 2021 
+\end{DoxyCopyright}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\label{plotfunctions_8h_a8a785fd98f444dbef6309ecceb5b9e68}} 
+\index{plotfunctions.h@{plotfunctions.h}!\_\_PLOTFUNCTIONS\_H\_\_@{\_\_PLOTFUNCTIONS\_H\_\_}}
+\index{\_\_PLOTFUNCTIONS\_H\_\_@{\_\_PLOTFUNCTIONS\_H\_\_}!plotfunctions.h@{plotfunctions.h}}
+\doxysubsubsection{\_\_PLOTFUNCTIONS\_H\_\_}
+{\footnotesize\ttfamily \#define \+\_\+\+\_\+\+PLOTFUNCTIONS\+\_\+\+H\+\_\+\+\_\+}
+
+
+
+\doxysubsection{Typedef Documentation}
+\mbox{\label{plotfunctions_8h_aea051400f804425a61fbcb34c34c712e}} 
+\index{plotfunctions.h@{plotfunctions.h}!functionPointer@{functionPointer}}
+\index{functionPointer@{functionPointer}!plotfunctions.h@{plotfunctions.h}}
+\doxysubsubsection{functionPointer}
+{\footnotesize\ttfamily typedef double($\ast$ function\+Pointer) (double)}
+
+
+
+Including pb\+Plots Headers. 
+
+Defining Function Pointer \mbox{\label{plotfunctions_8h_acea8d746e2704734a185c10329187d3f}} 
+\index{plotfunctions.h@{plotfunctions.h}!plot\_check@{plot\_check}}
+\index{plot\_check@{plot\_check}!plotfunctions.h@{plotfunctions.h}}
+\doxysubsubsection{plot\_check}
+{\footnotesize\ttfamily typedef enum \textbf{ plot\+\_\+check} \textbf{ plot\+\_\+check}}
+
+
+
+\doxysubsection{Enumeration Type Documentation}
+\mbox{\label{plotfunctions_8h_aab349329c3c7b65ebdf08e60d9d67441}} 
+\index{plotfunctions.h@{plotfunctions.h}!plot\_check@{plot\_check}}
+\index{plot\_check@{plot\_check}!plotfunctions.h@{plotfunctions.h}}
+\doxysubsubsection{plot\_check}
+{\footnotesize\ttfamily enum \textbf{ plot\+\_\+check}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{WRITE\_SUCCESS@{WRITE\_SUCCESS}!plotfunctions.h@{plotfunctions.h}}\index{plotfunctions.h@{plotfunctions.h}!WRITE\_SUCCESS@{WRITE\_SUCCESS}}}\mbox{\label{plotfunctions_8h_aab349329c3c7b65ebdf08e60d9d67441add0b1f954678f2b34a0166884de8a0ec}} 
+WRITE\+\_\+\+SUCCESS&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{WRITE\_FAILED@{WRITE\_FAILED}!plotfunctions.h@{plotfunctions.h}}\index{plotfunctions.h@{plotfunctions.h}!WRITE\_FAILED@{WRITE\_FAILED}}}\mbox{\label{plotfunctions_8h_aab349329c3c7b65ebdf08e60d9d67441a8ddcc9434788afe600c86c7e7f668c3a}} 
+WRITE\+\_\+\+FAILED&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\label{plotfunctions_8h_acd0a12bee3edcd78e91ef4524902c9fa}} 
+\index{plotfunctions.h@{plotfunctions.h}!function\_plot@{function\_plot}}
+\index{function\_plot@{function\_plot}!plotfunctions.h@{plotfunctions.h}}
+\doxysubsubsection{function\_plot()}
+{\footnotesize\ttfamily \textbf{ plot\+\_\+check} function\+\_\+plot (\begin{DoxyParamCaption}\item[{\textbf{ function\+Pointer}}]{Function }\end{DoxyParamCaption})}
+
+
+
+Function to plot the equation. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Function} & [in] Function Pointer pointing to the equation to be plotted \\
+\hline
+\end{DoxyParams}
+\mbox{\label{plotfunctions_8h_acd662ecd03041bd602ad486f9c90d523}} 
+\index{plotfunctions.h@{plotfunctions.h}!plot\_pointer\_function@{plot\_pointer\_function}}
+\index{plot\_pointer\_function@{plot\_pointer\_function}!plotfunctions.h@{plotfunctions.h}}
+\doxysubsubsection{plot\_pointer\_function()}
+{\footnotesize\ttfamily \textbf{ plot\+\_\+check} plot\+\_\+pointer\+\_\+function (\begin{DoxyParamCaption}\item[{double $\ast$}]{x\+Coordinates,  }\item[{double $\ast$}]{y\+Coordinates,  }\item[{int}]{data\+Count }\end{DoxyParamCaption})}
+
+
+
+Function to plot equation from Pointer Data. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em data\+Count} & [in] Number of points to be plotted \\
+\hline
+\end{DoxyParams}
+\mbox{\label{plotfunctions_8h_ade0627c8898e6f15360c76a70066b679}} 
+\index{plotfunctions.h@{plotfunctions.h}!points\_function\_plot@{points\_function\_plot}}
+\index{points\_function\_plot@{points\_function\_plot}!plotfunctions.h@{plotfunctions.h}}
+\doxysubsubsection{points\_function\_plot()}
+{\footnotesize\ttfamily \textbf{ plot\+\_\+check} points\+\_\+function\+\_\+plot (\begin{DoxyParamCaption}\item[{\textbf{ function\+Pointer}}]{Function,  }\item[{double $\ast$}]{x\+Coordinates,  }\item[{double $\ast$}]{y\+Coordinates,  }\item[{int}]{data\+Points }\end{DoxyParamCaption})}
+
+
+
+Function to plot equation with points. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Function} & [in] Function Pointer pointing to the equation to be plotted \\
+\hline
+{\em x\+Coordinates} & [in] Pointer to X Coordinates of points \\
+\hline
+{\em y\+Coordinates} & [in] Pointer to Y Coordinates of points \\
+\hline
+{\em data\+Points} & [in] Number of points to be plotted \\
+\hline
+\end{DoxyParams}
+\mbox{\label{plotfunctions_8h_ab30046404b19ae2766375674c707dbcc}} 
+\index{plotfunctions.h@{plotfunctions.h}!testWritePNG@{testWritePNG}}
+\index{testWritePNG@{testWritePNG}!plotfunctions.h@{plotfunctions.h}}
+\doxysubsubsection{testWritePNG()}
+{\footnotesize\ttfamily int test\+Write\+PNG (\begin{DoxyParamCaption}\item[{char $\ast$}]{name }\end{DoxyParamCaption})}
+
+
+
+Function to test of the write is successful. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em name} & Name of the file \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int To verify the file writing ~\newline
+ 
+\end{DoxyReturn}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\label{plotfunctions_8h_aacb199d25beebef66def0be5d7ac7c95}} 
+\index{plotfunctions.h@{plotfunctions.h}!xpoints@{xpoints}}
+\index{xpoints@{xpoints}!plotfunctions.h@{plotfunctions.h}}
+\doxysubsubsection{xpoints}
+{\footnotesize\ttfamily double$\ast$ xpoints\hspace{0.3cm}{\ttfamily [extern]}}
+
+\mbox{\label{plotfunctions_8h_a7f32afbe850a9bfd857173bb21f5b9e9}} 
+\index{plotfunctions.h@{plotfunctions.h}!ypoints@{ypoints}}
+\index{ypoints@{ypoints}!plotfunctions.h@{plotfunctions.h}}
+\doxysubsubsection{ypoints}
+{\footnotesize\ttfamily double$\ast$ ypoints\hspace{0.3cm}{\ttfamily [extern]}}
+
